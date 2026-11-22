@@ -5,38 +5,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Seu nome — Builder</title>
   <style>
-    :root { --bg: #fafafa; --fg: #111; --muted: #555; --border: #e5e5e5; }
-    body { font-family: system-ui, -apple-system, sans-serif; margin: 0; padding: 4rem 2rem; background: var(--bg); color: var(--fg); line-height: 1.5; }
-    h1 { font-size: clamp(2.5rem, 6vw, 4rem); margin: 0.25rem 0; font-weight: 600; }
-    .badge { display: inline-block; font-size: 0.875rem; padding: 0.25rem 0.75rem; border: 1px solid var(--border); border-radius: 999px; }
-    .grid { display: grid; gap: 1.5rem; margin-top: 2rem; }
-    .card { border: 1px solid var(--border); padding: 1.5rem; border-radius: 12px; }
-    .muted { color: var(--muted); }
+    :root {
+      --bg: #fafafa;
+      --fg: #111;
+      --muted: #666;
+      --border: #eaeaea;
+      --accent: #111;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.5;
+    }
+    .container { max-width: 720px; margin: 0 auto; padding: 5rem 1.5rem 4rem; }
+    .badge {
+      display: inline-block;
+      font-size: 0.8rem;
+      letter-spacing: 0.02em;
+      padding: 0.3rem 0.8rem;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      margin-bottom: 1.5rem;
+    }
+    h1 {
+      font-size: clamp(2.8rem, 7vw, 4.5rem);
+      font-weight: 600;
+      line-height: 1.05;
+      margin: 0 0 0.75rem;
+      letter-spacing: -0.02em;
+    }
+    .lead { font-size: 1.15rem; color: var(--muted); max-width: 28em; margin-bottom: 3rem; }
+    h2 { font-size: 1.5rem; margin: 3rem 0 1rem; }
+    .projects { display: grid; gap: 1rem; }
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      background: white;
+      transition: border-color 0.15s;
+    }
+    .card:hover { border-color: #ccc; }
+    .card strong { display: block; margin-bottom: 0.35rem; }
+    .muted { color: var(--muted); font-size: 0.95rem; }
+    .about { margin-top: 1rem; }
   </style>
 </head>
 <body>
-  <span class="badge">Disponível para projetos</span>
-  <h1>Seu nome</h1>
-  <p class="muted">Builder que transforma contexto em resultado.</p>
+  <div class="container">
+    <span class="badge">Disponível para projetos</span>
+    <h1>Seu nome</h1>
+    <p class="lead">Builder que transforma contexto em resultado.</p>
 
-  <h2>Projetos</h2>
-  <div class="grid">
-    <div class="card">
-      <strong>Projeto 1</strong>
-      <p class="muted">Descrição placeholder. Substitua com o texto curto da ingestão.</p>
+    <h2>Projetos</h2>
+    <div class="projects">
+      <div class="card">
+        <strong>Projeto 1</strong>
+        <p class="muted">Descrição placeholder. Substitua com o texto curto da ingestão.</p>
+      </div>
+      <div class="card">
+        <strong>Projeto 2</strong>
+        <p class="muted">Descrição placeholder.</p>
+      </div>
+      <div class="card">
+        <strong>Projeto 3</strong>
+        <p class="muted">Descrição placeholder.</p>
+      </div>
     </div>
-    <div class="card">
-      <strong>Projeto 2</strong>
-      <p class="muted">Descrição placeholder.</p>
-    </div>
-    <div class="card">
-      <strong>Projeto 3</strong>
-      <p class="muted">Descrição placeholder.</p>
+
+    <h2>Sobre</h2>
+    <div class="about">
+      <p>Bio placeholder. X anos de experiência. Y projetos entregues.</p>
+      <p class="muted">Fonte: PDF do LinkedIn + onboarding.</p>
     </div>
   </div>
-
-  <h2>Sobre</h2>
-  <p>Bio placeholder. X anos de experiência. Y projetos entregues.</p>
-  <p class="muted">Fonte: PDF do LinkedIn + onboarding.</p>
 </body>
 </html>

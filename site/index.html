@@ -2,24 +2,41 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Seu nome — Builder</title>
   <style>
-    body { font-family: system-ui, sans-serif; margin: 0; padding: 2rem; background: #fafafa; color: #111; }
-    h1 { font-size: 3rem; margin-bottom: 0.5rem; }
-    .card { border: 1px solid #ddd; padding: 1rem; margin: 1rem 0; border-radius: 8px; }
+    :root { --bg: #fafafa; --fg: #111; --muted: #555; --border: #e5e5e5; }
+    body { font-family: system-ui, -apple-system, sans-serif; margin: 0; padding: 4rem 2rem; background: var(--bg); color: var(--fg); line-height: 1.5; }
+    h1 { font-size: clamp(2.5rem, 6vw, 4rem); margin: 0.25rem 0; font-weight: 600; }
+    .badge { display: inline-block; font-size: 0.875rem; padding: 0.25rem 0.75rem; border: 1px solid var(--border); border-radius: 999px; }
+    .grid { display: grid; gap: 1.5rem; margin-top: 2rem; }
+    .card { border: 1px solid var(--border); padding: 1.5rem; border-radius: 12px; }
+    .muted { color: var(--muted); }
   </style>
 </head>
 <body>
-  <p>Disponível para projetos</p>
+  <span class="badge">Disponível para projetos</span>
   <h1>Seu nome</h1>
-  <p>Builder que transforma contexto em resultado.</p>
+  <p class="muted">Builder que transforma contexto em resultado.</p>
 
   <h2>Projetos</h2>
-  <div class="card">Projeto 1 — Descrição placeholder</div>
-  <div class="card">Projeto 2 — Descrição placeholder</div>
-  <div class="card">Projeto 3 — Descrição placeholder</div>
+  <div class="grid">
+    <div class="card">
+      <strong>Projeto 1</strong>
+      <p class="muted">Descrição placeholder. Substitua com o texto curto da ingestão.</p>
+    </div>
+    <div class="card">
+      <strong>Projeto 2</strong>
+      <p class="muted">Descrição placeholder.</p>
+    </div>
+    <div class="card">
+      <strong>Projeto 3</strong>
+      <p class="muted">Descrição placeholder.</p>
+    </div>
+  </div>
 
   <h2>Sobre</h2>
   <p>Bio placeholder. X anos de experiência. Y projetos entregues.</p>
+  <p class="muted">Fonte: PDF do LinkedIn + onboarding.</p>
 </body>
 </html>

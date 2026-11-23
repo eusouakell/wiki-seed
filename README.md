@@ -1,11 +1,19 @@
 # wiki-seed
 
-Seed para o workshop **Como criar wiki**.
-
-Caminho linear de onboarding → ingestão → wiki → site no GitHub Pages.
+Seed para o workshop **Como estruturar um LLM Wiki**  
+com Kellen Carolline Bonassoli  
+25 de novembro às 19h · TDC Community
 
 <p align="center">
-  <img src="site/preview.png" alt="Mockup do site gerado" width="800">
+  <img src="site/banner.png" alt="Banner do workshop Como estruturar um LLM Wiki" width="800">
+</p>
+
+Como organizar o conhecimento para que pessoas e agentes de IA possam acessá-lo de forma eficiente e consistente? Neste workshop exploramos o padrão **OKF** (Open Knowledge Format) e como utilizá-lo para construir uma **LLM Wiki**: uma base de conhecimento estruturada, persistente e acessível tanto por pessoas quanto por agentes.
+
+A abordagem substitui buscas dinâmicas baseadas em vetores (como as do RAG tradicional) por uma estrutura de conhecimento organizada, reutilizável e continuamente evolutiva.
+
+<p align="center">
+  <img src="site/preview.png" alt="Mockup do site gerado a partir da wiki" width="800">
 </p>
 
 ## O que é
@@ -28,7 +36,7 @@ O harness já vem pronto. O site abre com placeholder legível mesmo sem respost
 - **Wiki viva**: `concepts/` com catálogo (`index.md`) e histórico (`log.md`)
 - **Fronteira clara**: `raw/` é imutável; `deterministic/` e `AGENTS.md` controlam o agente
 - **Harness pronto**: boundaries e budgets já definidos
-- **Site como entrega**: template no estilo portfólio, com placeholder
+- **Site como entrega**: template de portfólio com placeholder
 - **Mensurável**: logs e estrutura permitem ver o que foi feito
 
 ## Funcionalidades
@@ -49,7 +57,7 @@ O harness já vem pronto. O site abre com placeholder legível mesmo sem respost
 
 ## Exemplo do resultado
 
-O site abre com conteúdo placeholder (nome, frase, cards de projeto, sobre).  
+O site abre com conteúdo placeholder.  
 Depois do onboarding e da ingestão, os placeholders são substituídos pelos dados da pessoa.
 
 Veja o mockup em `site/index.html` ou a imagem acima.

@@ -40,6 +40,8 @@ timestamp: YYYY-MM-DDTHH:MM:SSZ
 ---
 ```
 
+Campos opcionais (use só se ajudarem; veja `templates/CABECALHO.md`): `status`, `authority`, `source_refs`, `related`, `owner`, `last_reviewed`.
+
 ## Regras
 
 - Nunca edita `raw/`

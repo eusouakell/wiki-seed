@@ -53,6 +53,7 @@ skills/
   lint/              ← verifica saúde e conformidade
   cleanup/           ← consolida memória e limpa
   fechar-sessao/     ← confere, guarda o que vale e registra
+  site/              ← preenche o site de exemplo a partir da wiki
 templates/           ← modelos de página e guia do cabeçalho
 deterministic/       ← limites e orçamentos
 AGENTS.md            ← schema do agente
@@ -66,7 +67,7 @@ site/                ← superfície de teste
 - **Fronteira clara**: `raw/` é imutável; `deterministic/` e `AGENTS.md` controlam o agente
 - **OKF**: `type` obrigatório + title, description, tags recomendados
 - **Progressive disclosure**: agente lê o índice primeiro e abre só o necessário
-- **Cinco operações**: ingest, query, lint, cleanup e fechar sessão
+- **Cinco operações**: ingest, query, lint, cleanup, site e fechar sessão
 - **Site como teste**: template que mostra se o contexto funciona
 - **Mensurável**: log com formato parseável
 

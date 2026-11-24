@@ -27,45 +27,45 @@
   </style>
 </head>
 <body>
-  <div class="demo">Exemplo preenchido com dados fictícios. O template limpo está em <a href="../">site/</a>. As etiquetas vermelhas mostram de onde cada parte vem.</div>
+  <div class="demo">Exemplo preenchido <b>à mão</b>, com dados fictícios. Não foi gerado por um agente. O <a href="https://eusouakell.github.io/wiki-seed/">template limpo</a> continua intacto. As etiquetas vermelhas são um mapa ilustrativo: de onde cada parte da página viria na wiki.</div>
   <div class="container">
     <div class="flow">
-      <span>raw/perfil-linkedin.pdf</span><i>→ ingestão →</i><span>concepts/*.md</span><i>→ skill site →</i><span>site/index.html</span>
+      <span>raw/ (fonte)</span><i>→ ingestão →</i><span>concepts/ (wiki)</span><i>→ skill site →</i><span>site/index.html</span>
     </div>
 
     <span class="badge">Porto Alegre, RS</span>
-    <span class="src">badge ← concepts/joana-teste.md · Papel e contexto (cidade)</span>
+    <span class="src">badge viria de concepts/joana-teste.md · Papel e contexto (cidade)</span>
     <h1>Joana Teste</h1>
-    <span class="src">nome ← concepts/joana-teste.md · title</span>
+    <span class="src">nome viria de concepts/joana-teste.md · title</span>
     <p class="lead">Designer de produto com foco em design systems e pesquisa com usuários.</p>
-    <span class="src">frase de apresentação ← concepts/joana-teste.md · description</span>
+    <span class="src">frase de apresentação viria de concepts/joana-teste.md · description</span>
 
     <h2>Projetos</h2>
     <div class="projects">
       <div class="card">
         <strong>Design system Prisma</strong>
         <p class="muted">Biblioteca com 60 padrões de componentes, usada por 5 squads no Studio Lume.</p>
-        <span class="src">cartão ← concepts/design-system-prisma.md</span>
+        <span class="src">cartão viria de concepts/ (página de projeto)</span>
       </div>
       <div class="card">
         <strong>App Pagamentos</strong>
         <p class="muted">Nova jornada de Pix agendado no Banco Delta, com aumento de 18% na conversão.</p>
-        <span class="src">cartão ← concepts/app-pagamentos.md</span>
+        <span class="src">cartão viria de concepts/ (página de projeto)</span>
       </div>
       <div class="card">
         <strong>Pesquisa de uso do Prisma</strong>
         <p class="muted">Entrevistas com 12 pessoas de produto para priorizar os próximos componentes.</p>
-        <span class="src">cartão ← concepts/pesquisa-prisma.md</span>
+        <span class="src">cartão adicionado à mão (não veio do ensaio); viria de uma página de projeto em concepts/</span>
       </div>
     </div>
 
     <h2>Sobre</h2>
     <p>Designer de produto com 8 anos de experiência em produtos digitais. Líder de design no Studio Lume desde 2021. Formação em Design Digital pela UFRGS (2016).</p>
-    <span class="src">bio ← concepts/joana-teste.md · Histórico relevante</span>
+    <span class="src">bio viria de concepts/joana-teste.md · Histórico relevante</span>
     <p class="muted">Fonte: PDF do LinkedIn + onboarding.</p>
-    <span class="src">fonte ← concepts/log.md (entrada da ingestão)</span>
+    <span class="src">fonte viria de concepts/log.md (registro da ingestão)</span>
 
-    <footer>Joana Teste, Studio Lume, Banco Delta e o Prisma são fictícios. Todos os números são inventados para o workshop. Nenhum dado pessoal real. As páginas de concepts/ citadas são as que a ingestão do PDF fictício gera (ver ENSAIO.md na PR).</footer>
+    <footer>Joana Teste, Studio Lume, Banco Delta e o Prisma são fictícios. Todos os números são inventados para o workshop. Nenhum dado pessoal real. Os nomes de arquivo nas etiquetas são ilustrativos. O teste real com agente (PDF fictício, wiki e site gerados) está descrito em ENSAIO.md, na PR #2, e não é esta página.</footer>
   </div>
 </body>
 </html>

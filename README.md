@@ -24,24 +24,42 @@ O harness já vem pronto.
 1. Clone o repositório
 2. (Opcional) Responda as perguntas em `onboarding.md`
 3. Coloque fontes em `raw/` (PDF do LinkedIn + texto curto)
-4. A skill de ingestão gera páginas em `concepts/` e atualiza o `index.md` e o `log.md`
-5. O site em `site/` reflete o conteúdo da wiki (teste)
-6. Publique no GitHub Pages se quiser ver o resultado
+4. Use a skill de ingestão para gerar páginas em `concepts/`
+5. O agente usa progressive disclosure: lê `index.md` primeiro e só abre o necessário
+6. O site em `site/` reflete o conteúdo da wiki (teste)
+
+## Estrutura
+
+```
+raw/                 ← fontes imutáveis
+concepts/
+  index.md           ← catálogo (lê primeiro)
+  log.md             ← histórico parseável
+  overview.md        ← síntese de alto nível
+  *.md               ← conceitos com frontmatter OKF
+skills/
+  ingest/            ← raw → concepts
+  query/             ← responde a partir da wiki
+  lint/              ← verifica saúde e conformidade
+deterministic/       ← limites e orçamentos
+AGENTS.md            ← schema do agente
+site/                ← superfície de teste
+```
 
 ## Atributos
 
-- **Wiki viva**: `concepts/` com catálogo (`index.md`) e histórico (`log.md`)
+- **Wiki viva**: `concepts/` com catálogo, overview e log
 - **Fronteira clara**: `raw/` é imutável; `deterministic/` e `AGENTS.md` controlam o agente
-- **OKF**: frontmatter com `type` obrigatório nas páginas de conceito
-- **Harness pronto**: boundaries e budgets já definidos
+- **OKF**: `type` obrigatório + title, description, tags recomendados
+- **Progressive disclosure**: agente lê o índice primeiro e abre só o necessário
+- **Três operações**: ingest, query e lint
 - **Site como teste**: template que mostra se o contexto funciona
-- **Mensurável**: logs e estrutura permitem ver o que foi feito
+- **Mensurável**: log com formato parseável
 
 ## Funcionalidades
 
 - Onboarding que alimenta o contexto da wiki
-- Skill de ingestão de fontes
-- Skills de query e lint
+- Skills de ingestão, query e lint
 - Site estático pronto para Pages (superfície de teste)
 - Glossário e princípios separados
 - Roadmap de evolução
@@ -50,13 +68,13 @@ O harness já vem pronto.
 
 - Como manter uma wiki que o agente ajuda a construir
 - A diferença entre fonte (`raw/`) e conhecimento compilado (`concepts/`)
-- Por que o agente precisa de limites claros
+- Por que o agente precisa de limites claros e progressive disclosure
 - Como o formato OKF deixa o conhecimento legível por pessoas e agentes
-- Hábitos de progressive disclosure e medição desde o início
+- Hábitos de medição e manutenção desde o início
 
 ## Exemplo do resultado
 
-A wiki começa vazia (com um exemplo).  
+A wiki começa com exemplo e overview.  
 Depois da ingestão, `concepts/` tem páginas, `index.md` e `log.md` atualizados.  
 O site mostra o que a wiki contém.
 

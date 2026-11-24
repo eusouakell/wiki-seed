@@ -8,6 +8,12 @@ com Kellen Carolline Bonassoli
   <img src="site/banner.png" alt="Banner do workshop Como estruturar um LLM Wiki" width="800">
 </p>
 
+<p align="center">
+  <a href="https://github.com/eusouakell/wiki-seed/generate"><img alt="Use this template" src="https://img.shields.io/badge/use_this_template-be1035?style=for-the-badge&labelColor=3a3a3a"></a>
+  <a href="onboarding.md"><img alt="Comece pelo onboarding" src="https://img.shields.io/badge/comece_pelo-onboarding-ea1945?style=for-the-badge&labelColor=3a3a3a"></a>
+  <a href="ROADMAP.md"><img alt="Roteiro de evolução" src="https://img.shields.io/badge/roteiro-evolu%C3%A7%C3%A3o-d7e25b?style=for-the-badge&labelColor=3a3a3a"></a>
+</p>
+
 Como organizar o conhecimento para que pessoas e agentes de IA possam acessá-lo de forma eficiente e consistente? Neste workshop exploramos o padrão **OKF** (Open Knowledge Format) e como utilizá-lo para construir uma **LLM Wiki**: uma base de conhecimento estruturada, persistente e acessível tanto por pessoas quanto por agentes.
 
 A abordagem substitui buscas dinâmicas baseadas em vetores (como as do RAG tradicional) por uma estrutura de conhecimento organizada, reutilizável e continuamente evolutiva.

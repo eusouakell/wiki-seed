@@ -7,21 +7,22 @@ Schema da LLM Wiki. O harness já vem configurado.
 A wiki (`concepts/`) é o artefato principal e compounding.  
 O site (`site/`) é apenas uma superfície para testar se o contexto está utilizável.
 
-## Progressive disclosure
+## Progressive disclosure (lições 1, 3 e 4)
 
-1. Sempre leia `concepts/index.md` primeiro
+1. Sempre leia `concepts/index.md` primeiro (mapa pequeno, sempre no contexto)
 2. Abra apenas as páginas relevantes listadas no índice
 3. Evite carregar `raw/` ou páginas inteiras sem necessidade
 4. Use `grep` e `find` antes de pedir contexto extra
+5. Skills em `skills/` só são lidas quando a operação exige (carregamento sob demanda)
 
-## Regras
+## Regras de fronteira
 
-- Nunca edite arquivos em `raw/` (imutável)
+- Nunca edite arquivos em `raw/` (imutável — ground truth)
 - Nunca altere `deterministic/` ou este arquivo
 - Toda página em `concepts/` (exceto index.md e log.md) deve ter frontmatter com `type` não vazio
 - Atualize `concepts/index.md` e `concepts/log.md` a cada operação
 - Log com formato: `## [YYYY-MM-DD] operação | título`
-- Prefira a wiki compilada a reprocessar raw/
+- Prefira a wiki compilada a reprocessar raw/ (lição 5)
 
 ## Cabeçalho das páginas
 
@@ -42,3 +43,7 @@ Modelos prontos ficam em `templates/`. Campos opcionais e o que cada um signific
 - Markdown + Git + OKF
 - Skills em `skills/`
 - Site estático em `site/` (teste do contexto)
+
+## Referência
+
+As regras de progressive disclosure e índice pequeno seguem as lições de harness de produção (ByteByteGo / Ali Aminian) e o padrão LLM Wiki (Karpathy) formalizado no OKF (Google).

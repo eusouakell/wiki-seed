@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exemplo preenchido: Joana Teste (fictícia)</title>
+  <style>
+    :root { --bg:#fafafa; --fg:#111; --muted:#666; --border:#eaeaea; --note:#be1035; --notebg:#fdeef1; }
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif; margin:0; background:var(--bg); color:var(--fg); line-height:1.5; }
+    .demo { background:#3a3a3a; color:#fff; font-size:.85rem; padding:.6rem 1rem; text-align:center; }
+    .demo a { color:#d7e25b; }
+    .container { max-width:760px; margin:0 auto; padding:3rem 1.5rem 4rem; }
+    .badge { display:inline-block; font-size:.8rem; padding:.3rem .8rem; border:1px solid var(--border); border-radius:999px; margin-bottom:1.2rem; background:#fff; }
+    h1 { font-size:clamp(2.6rem,7vw,4.2rem); font-weight:600; line-height:1.05; margin:0 0 .6rem; letter-spacing:-.02em; }
+    .lead { font-size:1.15rem; color:var(--muted); max-width:30em; margin-bottom:2rem; }
+    h2 { font-size:1.4rem; margin:2.5rem 0 .8rem; }
+    .projects { display:grid; gap:1rem; }
+    .card { border:1px solid var(--border); border-radius:12px; padding:1.3rem 1.5rem; background:#fff; }
+    .card strong { display:block; margin-bottom:.3rem; }
+    .muted { color:var(--muted); font-size:.95rem; margin:.2rem 0 0; }
+    .src { display:block; margin-top:.5rem; font-size:.75rem; color:var(--note); background:var(--notebg); border-radius:6px; padding:.25rem .5rem; font-family:ui-monospace,Menlo,monospace; width:fit-content; }
+    .flow { display:flex; flex-wrap:wrap; gap:.5rem; align-items:center; font-size:.85rem; margin:1rem 0 2.2rem; }
+    .flow span { background:#fff; border:1px solid var(--border); border-radius:8px; padding:.35rem .7rem; font-family:ui-monospace,Menlo,monospace; }
+    .flow i { color:var(--muted); font-style:normal; }
+    footer { margin-top:3rem; font-size:.85rem; color:var(--muted); border-top:1px solid var(--border); padding-top:1rem; }
+  </style>
+</head>
+<body>
+  <div class="demo">Exemplo preenchido com dados fictícios. O template limpo está em <a href="../">site/</a>. As etiquetas vermelhas mostram de onde cada parte vem.</div>
+  <div class="container">
+    <div class="flow">
+      <span>raw/perfil-linkedin.pdf</span><i>→ ingestão →</i><span>concepts/*.md</span><i>→ skill site →</i><span>site/index.html</span>
+    </div>
+
+    <span class="badge">Porto Alegre, RS</span>
+    <span class="src">badge ← concepts/joana-teste.md · Papel e contexto (cidade)</span>
+    <h1>Joana Teste</h1>
+    <span class="src">nome ← concepts/joana-teste.md · title</span>
+    <p class="lead">Designer de produto com foco em design systems e pesquisa com usuários.</p>
+    <span class="src">frase de apresentação ← concepts/joana-teste.md · description</span>
+
+    <h2>Projetos</h2>
+    <div class="projects">
+      <div class="card">
+        <strong>Design system Prisma</strong>
+        <p class="muted">Biblioteca com 60 padrões de componentes, usada por 5 squads no Studio Lume.</p>
+        <span class="src">cartão ← concepts/design-system-prisma.md</span>
+      </div>
+      <div class="card">
+        <strong>App Pagamentos</strong>
+        <p class="muted">Nova jornada de Pix agendado no Banco Delta, com aumento de 18% na conversão.</p>
+        <span class="src">cartão ← concepts/app-pagamentos.md</span>
+      </div>
+      <div class="card">
+        <strong>Pesquisa de uso do Prisma</strong>
+        <p class="muted">Entrevistas com 12 pessoas de produto para priorizar os próximos componentes.</p>
+        <span class="src">cartão ← concepts/pesquisa-prisma.md</span>
+      </div>
+    </div>
+
+    <h2>Sobre</h2>
+    <p>Designer de produto com 8 anos de experiência em produtos digitais. Líder de design no Studio Lume desde 2021. Formação em Design Digital pela UFRGS (2016).</p>
+    <span class="src">bio ← concepts/joana-teste.md · Histórico relevante</span>
+    <p class="muted">Fonte: PDF do LinkedIn + onboarding.</p>
+    <span class="src">fonte ← concepts/log.md (entrada da ingestão)</span>
+
+    <footer>Joana Teste, Studio Lume, Banco Delta e o Prisma são fictícios. Todos os números são inventados para o workshop. Nenhum dado pessoal real. As páginas de concepts/ citadas são as que a ingestão do PDF fictício gera (ver ENSAIO.md na PR).</footer>
+  </div>
+</body>
+</html>

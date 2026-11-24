@@ -28,6 +28,7 @@ O site (`site/`) é apenas uma superfície para testar se o contexto está utili
 - **ingest**: lê `raw/` → gera/atualiza páginas em `concepts/` → atualiza index + log
 - **query**: lê index → responde com citações → pode gravar resposta de volta
 - **lint**: verifica órfãos, links quebrados, frontmatter faltando, contradições
+- **cleanup**: consolida memória, atualiza overview, propõe arquivamento (rode depois de várias ingestões)
 
 ## Stack
 

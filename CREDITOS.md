@@ -14,3 +14,5 @@ Site de exemplo (`site/index.html`):
   - p3.jpg: Wilfredor, CC0, https://commons.wikimedia.org/wiki/File:Panoramic_view_of_Jacques-Cartier_National_Park_from_the_Wolves_peak_(Les_Loups),_Quebec,_Canada.jpg
   - p4.jpg: Wilfredor, CC0, https://commons.wikimedia.org/wiki/File:San_Juan_Valley.jpg
   - p5.jpg: David Marcu davidmarcu, CC0, https://commons.wikimedia.org/wiki/File:Alone_in_the_unspoilt_wilderness_(Unsplash).jpg
+- Retrato de Joana Teste (`site/img/joana.jpg`): imagem gerada por IA, de pessoa fictícia. Não é foto de pessoa real.
+- Fonte Inter (SIL Open Font License), carregada do Google Fonts.

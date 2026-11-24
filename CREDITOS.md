@@ -16,3 +16,4 @@ Site de exemplo (`site/index.html`):
   - p5.jpg: David Marcu davidmarcu, CC0, https://commons.wikimedia.org/wiki/File:Alone_in_the_unspoilt_wilderness_(Unsplash).jpg
 - Retrato de Joana Teste (`site/img/joana.jpg`): imagem gerada por IA, de pessoa fictícia. Não é foto de pessoa real.
 - Fonte Inter (SIL Open Font License), carregada do Google Fonts.
+- Perfil, projetos e depoimentos do site de exemplo são fictícios (persona Joana Teste), escritos só para a amostra.

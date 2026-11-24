@@ -8,7 +8,6 @@ Este seed adapta ideias de dois kits abertos, ambos sob CC BY 4.0. Texto e estru
 Alterações: reescrita em português para este contexto, simplificação e adaptação à estrutura `raw/`, `concepts/`, `skills/`.
 
 Site de exemplo (`site/index.html`):
-- Layout inspirado no template **Menoa**, de Lazar Filipović (Framer Marketplace). Texto, código e imagens são próprios; nada do template foi copiado. A licença exata do template não foi verificada.
 - Fotos (CC0, via Wikimedia Commons):
   - p1.jpg: Marco Bonomo, CC0, https://commons.wikimedia.org/wiki/File:Marmolada,_Italy.jpg
   - p2.jpg: Ales Krivec aleskrivec, CC0, https://commons.wikimedia.org/wiki/File:Clouds_mirrored_in_a_mountain_lake_(Unsplash).jpg

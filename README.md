@@ -12,6 +12,10 @@ Como organizar o conhecimento para que pessoas e agentes de IA possam acessá-lo
 
 A abordagem substitui buscas dinâmicas baseadas em vetores (como as do RAG tradicional) por uma estrutura de conhecimento organizada, reutilizável e continuamente evolutiva.
 
+<p align="center">
+  <img src="site/preview.png" alt="Site gerado a partir da wiki" width="800">
+</p>
+
 ## O que é
 
 Um repositório semente para construir uma LLM Wiki.  

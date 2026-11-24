@@ -1,45 +1,43 @@
 ---
+type: Onboarding
 title: Onboarding
-description: Conversa curta para personalizar o site.
-updated: 2026-11-23
+description: Perguntas para alimentar o contexto da wiki.
+timestamp: 2026-11-23T00:00:00Z
 ---
 
-# Vamos personalizar seu site
+# Vamos estruturar seu contexto
 
 Responda as perguntas abaixo. Pode ser curto.  
-Se quiser pular alguma, é só deixar em branco — o site abre com placeholder mesmo assim.
+Essas respostas ajudam o agente a montar as páginas em `concepts/`.
 
-## 1. Como você quer aparecer?
+O site é só uma forma de testar se o contexto ficou utilizável.  
+Você pode pular perguntas. A wiki funciona mesmo com pouco conteúdo.
 
-Nome completo, apelido ou o que preferir no topo do site.
+## 1. Como você quer ser identificado?
 
-> 
-
-## 2. Uma frase sobre você
-
-Algo curto que apareça no hero. Ex.: “Designer que constrói produtos com IA” ou “Engenheira que gosta de sistemas claros”.
+Nome, apelido ou como o agente deve se referir a você.
 
 > 
 
-## 3. Você está aberto a conversas e projetos?
+## 2. O que você faz hoje?
 
-Sim ou não. Isso vira um pequeno indicador no site.
-
-> 
-
-## 4. Qual é sua área principal hoje?
-
-Design, produto, engenharia, negócios, conteúdo, ou uma mistura.
+Uma ou duas frases sobre sua área e o que constrói ou cuida.
 
 > 
 
-## 5. Quer destacar alguma entrega ou projeto?
+## 3. Quais temas o agente deve conhecer sobre você?
 
-Pode ser um texto curto ou só o nome. Depois a gente pode puxar mais detalhe da ingestão.
+Liste 2 ou 3 assuntos, projetos ou áreas relevantes.
+
+> 
+
+## 4. Tem alguma fonte pronta?
+
+Pode ser o PDF do LinkedIn ou um texto curto. Coloque em `raw/`.
 
 > 
 
 ---
 
 Quando terminar, salve o arquivo.  
-A skill de ingestão e o site usam essas respostas.
+A skill de ingestão usa essas respostas para gerar páginas na wiki.

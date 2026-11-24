@@ -23,12 +23,18 @@ O site (`site/`) é apenas uma superfície para testar se o contexto está utili
 - Log com formato: `## [YYYY-MM-DD] operação | título`
 - Prefira a wiki compilada a reprocessar raw/
 
+## Cabeçalho das páginas
+
+Toda página em `concepts/` começa com frontmatter. Só `type` é obrigatório; o resto é recomendado.
+Modelos prontos ficam em `templates/`. Campos opcionais e o que cada um significa: `templates/CABECALHO.md`.
+
 ## Operações
 
 - **ingest**: lê `raw/` → gera/atualiza páginas em `concepts/` → atualiza index + log
 - **query**: lê index → responde com citações → pode gravar resposta de volta
 - **lint**: verifica órfãos, links quebrados, frontmatter faltando, contradições
 - **cleanup**: consolida memória, atualiza overview, propõe arquivamento (rode depois de várias ingestões)
+- **fechar sessão**: confere o que foi salvo, propõe o que vale guardar, registra no log (sem apagar nem mover nada)
 
 ## Stack
 

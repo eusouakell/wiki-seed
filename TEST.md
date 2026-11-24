@@ -6,6 +6,7 @@
 4. Coloque um texto curto em `raw/projeto.txt`
 5. Use a skill de ingestão (ou peça ao agente) para gerar uma página em `concepts/`
 6. Verifique se `concepts/index.md` e `concepts/log.md` foram atualizados
-7. (Opcional) Ative GitHub Pages na pasta `site/`
+7. Peça "fechar sessão": o log deve ganhar uma entrada com o tema
+8. (Opcional) Ative GitHub Pages na pasta `site/`
 
 O site placeholder já funciona sem nenhuma resposta.

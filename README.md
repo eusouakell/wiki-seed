@@ -25,7 +25,7 @@ O harness já vem pronto.
 
 ## Como funciona
 
-1. Clone o repositório
+1. Crie o seu repositório com **Use this template** e clone-o
 2. Leia e responda o `onboarding.md` (apresentação, instalação, personalização e guia de tarefas)
 3. Coloque fontes em `raw/` (PDF do LinkedIn + texto curto)
 4. Use a skill de ingestão para gerar páginas em `concepts/`
@@ -46,6 +46,8 @@ skills/
   query/             ← responde a partir da wiki
   lint/              ← verifica saúde e conformidade
   cleanup/           ← consolida memória e limpa
+  fechar-sessao/     ← confere, guarda o que vale e registra
+templates/           ← modelos de página e guia do cabeçalho
 deterministic/       ← limites e orçamentos
 AGENTS.md            ← schema do agente
 onboarding.md        ← apresentação + guia completo
@@ -58,14 +60,16 @@ site/                ← superfície de teste
 - **Fronteira clara**: `raw/` é imutável; `deterministic/` e `AGENTS.md` controlam o agente
 - **OKF**: `type` obrigatório + title, description, tags recomendados
 - **Progressive disclosure**: agente lê o índice primeiro e abre só o necessário
-- **Quatro operações**: ingest, query, lint e cleanup
+- **Cinco operações**: ingest, query, lint, cleanup e fechar sessão
 - **Site como teste**: template que mostra se o contexto funciona
 - **Mensurável**: log com formato parseável
 
 ## Funcionalidades
 
 - Onboarding completo (apresentação, instalação, personalização e guia de tarefas)
-- Skills de ingestão, query, lint e cleanup
+- Skills de ingestão, query, lint, cleanup e fechar sessão
+- Modelos de página (conceito, pessoa, projeto, decisão) e guia do cabeçalho
+- Onboarding que pergunta o seu ambiente (agente, acesso, objetivo) para adaptar o uso
 - Site estático pronto para Pages (superfície de teste)
 - Glossário e princípios separados
 - Roadmap de evolução
@@ -85,3 +89,11 @@ Depois da ingestão, `concepts/` tem páginas, `index.md` e `log.md` atualizados
 O site mostra o que a wiki contém.
 
 Veja o mockup em `site/index.html`.
+
+## Para continuar depois
+
+O `ROADMAP.md` mostra os próximos passos. `CONTEXTO-PESSOAL-A-ENTERPRISE.md` explica o que muda quando o contexto sai do uso pessoal.
+
+## Créditos
+
+Ideias adaptadas de outros kits abertos, com atribuição em [`CREDITOS.md`](CREDITOS.md).

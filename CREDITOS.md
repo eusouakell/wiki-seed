@@ -6,3 +6,12 @@ Este seed adapta ideias de dois kits abertos, ambos sob CC BY 4.0. Texto e estru
 - **Knowledge Base Seed**, de Wagner Martins (W/M Inc.), https://github.com/wagnerlsmartins/knowledge-base-seed. Ideias adaptadas: níveis de adoção, convenção de cabeçalho leve com campos opcionais (`templates/CABECALHO.md`) e a separação entre estado atual e histórico. Licença: CC BY 4.0, https://creativecommons.org/licenses/by/4.0/deed.pt-br
 
 Alterações: reescrita em português para este contexto, simplificação e adaptação à estrutura `raw/`, `concepts/`, `skills/`.
+
+Site de exemplo (`site/index.html`):
+- Layout inspirado no template **Menoa**, de Lazar Filipović (Framer Marketplace). Texto, código e imagens são próprios; nada do template foi copiado. A licença exata do template não foi verificada.
+- Fotos (CC0, via Wikimedia Commons):
+  - p1.jpg: Marco Bonomo, CC0, https://commons.wikimedia.org/wiki/File:Marmolada,_Italy.jpg
+  - p2.jpg: Ales Krivec aleskrivec, CC0, https://commons.wikimedia.org/wiki/File:Clouds_mirrored_in_a_mountain_lake_(Unsplash).jpg
+  - p3.jpg: Wilfredor, CC0, https://commons.wikimedia.org/wiki/File:Panoramic_view_of_Jacques-Cartier_National_Park_from_the_Wolves_peak_(Les_Loups),_Quebec,_Canada.jpg
+  - p4.jpg: Wilfredor, CC0, https://commons.wikimedia.org/wiki/File:San_Juan_Valley.jpg
+  - p5.jpg: David Marcu davidmarcu, CC0, https://commons.wikimedia.org/wiki/File:Alone_in_the_unspoilt_wilderness_(Unsplash).jpg

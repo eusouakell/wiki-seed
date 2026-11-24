@@ -1,13 +1,20 @@
 ---
 type: Skill
 title: Skill — ingest
-description: Lê fontes em raw/ e gera páginas em concepts/.
-timestamp: 2026-11-23T00:00:00Z
+description: Lê fontes em raw/ e gera ou atualiza páginas em concepts/.
+tags: [skill, ingest]
+timestamp: 2026-11-24T12:00:00Z
 ---
 
 # Skill: ingest
 
 Lê arquivos de `raw/` e cria ou atualiza páginas em `concepts/`.
+
+## Progressive disclosure
+
+1. Leia `concepts/index.md` para saber o que já existe
+2. Processe uma fonte por vez
+3. Atualize apenas as páginas que a fonte realmente toca
 
 ## Entrada
 
@@ -19,6 +26,7 @@ Lê arquivos de `raw/` e cria ou atualiza páginas em `concepts/`.
 
 - Páginas em `concepts/` com frontmatter OKF
 - Atualização de `concepts/index.md` e `concepts/log.md`
+- Atualização opcional de `concepts/overview.md`
 
 ## Frontmatter obrigatório em toda página gerada
 
@@ -27,6 +35,7 @@ Lê arquivos de `raw/` e cria ou atualiza páginas em `concepts/`.
 type: Concept
 title: 
 description: 
+tags: []
 timestamp: YYYY-MM-DDTHH:MM:SSZ
 ---
 ```
@@ -34,6 +43,10 @@ timestamp: YYYY-MM-DDTHH:MM:SSZ
 ## Regras
 
 - Nunca edita `raw/`
-- Toda página gerada deve ter `type` (obrigatório no OKF)
+- Toda página gerada deve ter `type` não vazio
 - Não adicione frontmatter em `index.md` nem em `log.md`
-- Registra a operação no log com o formato `## [YYYY-MM-DD] ingest | título`
+- Registre a operação no log:
+
+```
+## [YYYY-MM-DD] ingest | título da fonte
+```

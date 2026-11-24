@@ -14,3 +14,7 @@ Páginas geradas em `concepts/` + `index.md` e `log.md` atualizados.
 
 ## Nível 4 — Site
 Site customizado publicado no GitHub Pages.
+
+## Depois do workshop
+
+Veja `RESOURCES.md` para coleções de aprofundamento (frontend, tipografia, acessibilidade, etc.).

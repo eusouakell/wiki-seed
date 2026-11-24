@@ -1,0 +1,16 @@
+Joana Teste (pessoa fictícia, só para teste)
+Designer de Produto | Porto Alegre, RS
+
+Resumo
+Designer com 8 anos de experiência em produtos digitais. Gosto de pesquisa com usuários e design systems.
+
+Experiência
+Studio Lume (2021 - hoje): Líder de design. Criou o design system Prisma usado por 5 squads.
+Banco Delta (2017 - 2021): Designer pleno. Redesenhou o app de pagamentos, aumentando conversão em 18%.
+
+Projetos
+Design system Prisma: biblioteca de componentes com 60 padrões.
+App Pagamentos: nova jornada de pix agendado.
+
+Formação
+Design Digital, UFRGS, 2016

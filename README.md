@@ -22,7 +22,7 @@ O harness já vem pronto.
 ## Como funciona
 
 1. Clone o repositório
-2. (Opcional) Responda as perguntas em `onboarding.md`
+2. Leia e responda o `onboarding.md` (apresentação, instalação, personalização e guia de tarefas)
 3. Coloque fontes em `raw/` (PDF do LinkedIn + texto curto)
 4. Use a skill de ingestão para gerar páginas em `concepts/`
 5. O agente usa progressive disclosure: lê `index.md` primeiro e só abre o necessário
@@ -41,8 +41,10 @@ skills/
   ingest/            ← raw → concepts
   query/             ← responde a partir da wiki
   lint/              ← verifica saúde e conformidade
+  cleanup/           ← consolida memória e limpa
 deterministic/       ← limites e orçamentos
 AGENTS.md            ← schema do agente
+onboarding.md        ← apresentação + guia completo
 site/                ← superfície de teste
 ```
 
@@ -52,14 +54,14 @@ site/                ← superfície de teste
 - **Fronteira clara**: `raw/` é imutável; `deterministic/` e `AGENTS.md` controlam o agente
 - **OKF**: `type` obrigatório + title, description, tags recomendados
 - **Progressive disclosure**: agente lê o índice primeiro e abre só o necessário
-- **Três operações**: ingest, query e lint
+- **Quatro operações**: ingest, query, lint e cleanup
 - **Site como teste**: template que mostra se o contexto funciona
 - **Mensurável**: log com formato parseável
 
 ## Funcionalidades
 
-- Onboarding que alimenta o contexto da wiki
-- Skills de ingestão, query e lint
+- Onboarding completo (apresentação, instalação, personalização e guia de tarefas)
+- Skills de ingestão, query, lint e cleanup
 - Site estático pronto para Pages (superfície de teste)
 - Glossário e princípios separados
 - Roadmap de evolução
@@ -70,7 +72,7 @@ site/                ← superfície de teste
 - A diferença entre fonte (`raw/`) e conhecimento compilado (`concepts/`)
 - Por que o agente precisa de limites claros e progressive disclosure
 - Como o formato OKF deixa o conhecimento legível por pessoas e agentes
-- Hábitos de medição e manutenção desde o início
+- Hábitos de medição, limpeza e manutenção desde o início
 
 ## Exemplo do resultado
 

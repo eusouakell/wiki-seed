@@ -1,22 +1,30 @@
 ---
 type: Skill
 title: Skill — lint
-description: Verifica saúde da wiki (contradições, órfãos, links quebrados).
-timestamp: 2026-11-23T00:00:00Z
+description: Verifica saúde da wiki (contradições, órfãos, links, frontmatter).
+tags: [skill, lint]
+timestamp: 2026-11-24T12:00:00Z
 ---
 
 # Skill: lint
 
-Verifica a saúde da wiki.
+Verifica a saúde e a conformidade da wiki.
 
 ## O que verificar
 
-- Páginas sem entrada em `concepts/index.md`
-- Links quebrados entre páginas
-- Páginas sem frontmatter `type`
-- Entradas antigas no log
+- Páginas em `concepts/` sem entrada em `concepts/index.md`
+- Entradas no index que apontam para arquivos inexistentes
+- Links internos quebrados
+- Páginas sem frontmatter ou sem campo `type` (exceto index.md e log.md)
+- Contradições óbvias entre páginas
+- Entradas antigas ou mal formatadas no log
 
 ## Saída
 
-Lista os problemas encontrados e sugere correções.  
-Registra a execução em `concepts/log.md` com o formato `## [YYYY-MM-DD] lint | resumo`.
+Liste os problemas encontrados e sugira correções concretas.
+
+Registre a execução em `concepts/log.md`:
+
+```
+## [YYYY-MM-DD] lint | resumo dos problemas encontrados
+```

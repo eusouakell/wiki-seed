@@ -1,6 +1,9 @@
 # Glossário
 
-Termos técnicos que aparecem como palavras-chave no restante do seed.
+Glossário transversal: termos técnicos da wiki como um todo. Cada contexto em `concepts/` tem sua própria linguagem ubíqua em `linguagem-ubiqua.md`.
+
+- **Contexto (bounded context)**: recorte de domínio com regras e termos próprios; o que vale em um não se mistura com outro.
+- **Linguagem ubíqua**: conjunto de termos com um único significado dentro de um contexto.
 
 - **OKF**: Open Knowledge Format. Frontmatter simples em Markdown.
 - **Harness**: Regras e limites que o agente segue.

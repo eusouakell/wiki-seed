@@ -1,9 +1,13 @@
-# Índice
+# Índice global
 
-Catálogo da wiki. O agente lê este arquivo primeiro (progressive disclosure).
+Catálogo da wiki. O agente lê este arquivo primeiro (nível 0 do progressive disclosure).
 
-## Páginas
+## Contextos
 
-- [exemplo](exemplo.md) — Página de exemplo com frontmatter OKF
+- [biblioteca-prisma](biblioteca-prisma/index.md) — Contexto de exemplo, com índice e linguagem ubíqua próprios
+
+## Páginas globais
+
 - [overview](overview.md) — Síntese de alto nível do estado da wiki
-- [lab-lint](lab-lint.md) — Laboratório com erros intencionais para o exercício de lint (workshop)
+
+Página nova? Escolha o contexto (ou crie um, com `index.md` e `linguagem-ubiqua.md` próprios) e atualize este índice.

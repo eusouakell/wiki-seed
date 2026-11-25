@@ -35,7 +35,7 @@ O harness já vem pronto.
 2. Leia e responda o `onboarding.md` (apresentação, instalação, personalização e guia de tarefas)
 3. Coloque fontes em `raw/` (PDF do LinkedIn + texto curto)
 4. Use a skill de ingestão para gerar páginas em `concepts/`
-5. O agente usa progressive disclosure: lê `index.md` primeiro e só abre o necessário
+5. O agente usa progressive disclosure: lê o índice global, depois o índice do contexto, e só abre o necessário
 6. A skill `skills/site/` preenche o site de exemplo a partir da wiki (teste)
 
 ## Estrutura
@@ -43,10 +43,13 @@ O harness já vem pronto.
 ```
 raw/                 ← fontes imutáveis (com exemplo para o exercício de ingestão)
 concepts/
-  index.md           ← catálogo (lê primeiro)
+  index.md           ← nível 0: catálogo global (lê primeiro)
   log.md             ← histórico parseável
   overview.md        ← síntese de alto nível
-  *.md               ← conceitos com frontmatter OKF
+  biblioteca-prisma/ ← contexto de exemplo (bounded context)
+    index.md         ← nível 1: índice do contexto
+    linguagem-ubiqua.md ← termos que só valem ali
+    *.md             ← páginas com frontmatter OKF
 skills/
   ingest/            ← raw → concepts
   query/             ← responde a partir da wiki
@@ -54,7 +57,7 @@ skills/
   cleanup/           ← consolida memória e limpa
   fechar-sessao/     ← confere, guarda o que vale e registra
   site/              ← preenche o site de exemplo a partir da wiki
-templates/           ← modelos de página e guia do cabeçalho
+templates/           ← modelos de página e guia do cabeçalho (o `.okf/` das referências)
 deterministic/       ← limites e orçamentos
 AGENTS.md            ← schema do agente
 onboarding.md        ← apresentação + guia completo
@@ -64,18 +67,19 @@ site/                ← superfície de teste
 
 ## Atributos
 
-- **Wiki viva**: `concepts/` com catálogo, overview e log
+- **Wiki viva**: `concepts/` com catálogo global, overview e log
+- **Contextos delimitados (DDD)**: cada contexto tem índice e linguagem ubíqua próprios
 - **Fronteira clara**: `raw/` é imutável; `deterministic/` e `AGENTS.md` controlam o agente
 - **OKF**: `type` obrigatório + title, description, tags recomendados
-- **Progressive disclosure**: agente lê o índice primeiro e abre só o necessário
-- **Cinco operações**: ingest, query, lint, cleanup, site e fechar sessão
+- **Progressive disclosure**: agente lê o índice global, depois o do contexto, e abre só o necessário
+- **Seis operações**: ingest, query, lint, cleanup, site e fechar sessão
 - **Site como teste**: template que mostra se o contexto funciona
 - **Mensurável**: log com formato parseável
 
 ## Funcionalidades
 
 - Onboarding completo (apresentação, instalação, personalização e guia de tarefas)
-- Skills de ingestão, query, lint, cleanup e fechar sessão
+- Skills de ingestão, query, lint, cleanup, site e fechar sessão
 - Modelos de página (conceito, pessoa, projeto, decisão) e guia do cabeçalho
 - Onboarding que pergunta o seu ambiente (agente, acesso, objetivo) para adaptar o uso
 - Site estático pronto para Pages (superfície de teste)
@@ -87,6 +91,7 @@ site/                ← superfície de teste
 - Como manter uma wiki que o agente ajuda a construir
 - A diferença entre fonte (`raw/`) e conhecimento compilado (`concepts/`)
 - Por que o agente precisa de limites claros e progressive disclosure
+- Como contextos delimitados (DDD) impedem que regras de um domínio vazem para outro
 - Como o formato OKF deixa o conhecimento legível por pessoas e agentes
 - Hábitos de medição, limpeza e manutenção desde o início
 
@@ -96,7 +101,7 @@ Os três exercícios do workshop, um por momento da aula. Todos rodam dentro da 
 
 ### Exercício 1 — Navegação JIT
 
-Peça ao agente uma resposta pontual (ex.: "o que já existe na wiki sobre o projeto X?"). Observe que ele lê primeiro `concepts/index.md` e abre só as páginas necessárias. É o progressive disclosure na prática. Skill: `skills/query/`.
+Peça ao agente uma resposta pontual (ex.: "o que já existe na wiki sobre a Biblioteca Prisma?"). Observe que ele lê primeiro `concepts/index.md` (nível 0), abre o índice do contexto (nível 1) e só então as páginas necessárias. É o progressive disclosure na prática. Skill: `skills/query/`.
 
 ### Exercício 2 — Ingestão e compounding
 
@@ -104,9 +109,9 @@ A pasta `raw/` traz uma fonte bruta de exemplo: `nota-reuniao-raw.md`, com decis
 
 ### Exercício 3 — LLM Lint
 
-A página `concepts/lab-lint.md` contém erros de propósito. Peça ao agente para rodar a skill de lint, listar os problemas e propor correções. Skill: `skills/lint/`.
+A página `concepts/biblioteca-prisma/lab-lint.md` contém erros de propósito. Peça ao agente para rodar a skill de lint, listar os problemas e propor correções. Skill: `skills/lint/`.
 
-Material de apoio: `PRINCIPLES.md` (regras editoriais e de harness), `templates/` (modelos de página e guia do cabeçalho), `GLOSSARY.md` (linguagem ubíqua) e `COMPARATIVO.md` (RAG tradicional vs LLM Wiki + OKF).
+Material de apoio: `PRINCIPLES.md` (regras editoriais e de harness), `templates/` (modelos de página e guia do cabeçalho), `GLOSSARY.md` (glossário transversal; cada contexto tem seu `linguagem-ubiqua.md`) e `COMPARATIVO.md` (RAG tradicional vs LLM Wiki + OKF).
 
 ## Exemplo do resultado
 

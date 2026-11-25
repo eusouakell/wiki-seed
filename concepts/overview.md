@@ -12,7 +12,7 @@ Síntese do conhecimento compilado até o momento.
 
 ## Estado atual
 
-A wiki está em fase inicial. Contém apenas o exemplo de conceito.
+A wiki está em fase inicial. Contém um contexto de exemplo (`biblioteca-prisma/`) com uma página de exemplo e o laboratório de lint.
 
 ## Gaps
 

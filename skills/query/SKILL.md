@@ -12,15 +12,15 @@ Responde perguntas usando apenas o conteúdo compilado em `concepts/`.
 
 ## Progressive disclosure
 
-1. Leia `concepts/index.md` primeiro
-2. Identifique as páginas relevantes pela descrição de uma linha
-3. Abra somente essas páginas
+1. Leia `concepts/index.md` primeiro (nível 0): ele lista os contextos da wiki
+2. Abra o `index.md` do contexto relevante (nível 1) e, se precisar dos termos, a `linguagem-ubiqua.md` dele
+3. Identifique as páginas pela descrição de uma linha e abra somente elas
 4. Não leia `raw/` a menos que a informação não exista na wiki
 
 ## Como usar
 
 1. Responda com citação das páginas usadas
-2. Se a resposta for útil e reutilizável, pergunte se deve ser gravada como nova página em `concepts/`
+2. Se a resposta for útil e reutilizável, pergunte se deve ser gravada como nova página no contexto correspondente
 3. Registre a consulta em `concepts/log.md`:
 
 ```

@@ -12,10 +12,11 @@ Verifica a saúde e a conformidade da wiki.
 
 ## O que verificar
 
-- Páginas em `concepts/` sem entrada em `concepts/index.md`
-- Entradas no index que apontam para arquivos inexistentes
+- Páginas em `concepts/` (incluindo as pastas de contexto) sem entrada no `index.md` do contexto ou no índice global
+- Entradas nos índices que apontam para arquivos inexistentes
 - Links internos quebrados
 - Páginas sem frontmatter ou sem campo `type` (exceto index.md e log.md)
+- Termos fora da linguagem ubíqua: confira o `GLOSSARY.md` (transversal) e o `linguagem-ubiqua.md` do contexto da página
 - Contradições óbvias entre páginas
 - Entradas antigas ou mal formatadas no log
 

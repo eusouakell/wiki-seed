@@ -42,3 +42,24 @@ Cada operação levou de 40 s a 1 min 40 s.
 - Modelo gratuito não é igual a Claude ou Codex: a qualidade e o tempo variam
 - A cota gratuita não é publicada e a lista de modelos gratuitos muda. Não conte com isso como garantia
 - Rode uma vez antes do workshop e guarde a saída como plano B
+
+## Exercício PDF → site (25/11/2026)
+
+Teste de `EXERCICIO-SITE.md` em clone isolado, com outra pessoa fictícia (Marina Alves, analista de dados, Recife) para ver se sobrava algo da Joana. PDF gerado a partir de texto e lido com `pdftotext`. Agente: OpenCode 1.19.6 com `opencode/deepseek-v4.1-flash-free`, uma execução por operação. Nada publicado.
+
+| Passo | Resultado |
+|-------|-----------|
+| Ingest do PDF | criou contexto novo `perfil-profissional/` com a pessoa, atualizou índice, overview e log; `raw/` intacto |
+| Site (versão anterior da skill, só leitura do que a wiki tem) | trocou nome, cargo, apresentação, Sobre e projetos nas 7 páginas; o que não havia na wiki virou `[FALTA: ...]`; removeu depoimentos, FAQ e prazos de exemplo; não mexeu em CSS, JS nem imagens |
+| Busca por "Joana" no texto visível | nenhum resultado; sobraram só nomes de arquivo (`img/joana.jpg`, `projeto-biblioteca-prisma.html`) |
+| Conferência no navegador (início e Sobre) | `[FALTA]` aparecem onde faltou dado; layout preservado |
+
+Tempo desta execução: ingest cerca de 1 min; operação site cerca de 6 min.
+
+Problemas encontrados, já tratados no texto da skill `site` (passos 6 e 7), que **não foi reexecutada** depois da correção:
+
+- A foto do exemplo continuou no lugar, com o `alt` trocado para o novo nome. A pessoa precisa trocar a imagem
+- O item de menu "Depoimentos" ficou, apesar de os depoimentos terem sido removidos
+- Legendas curtas sem fonte na wiki ("Planilhas primeiro, decisões depois") foram inventadas pelo modelo
+
+Limites: uma execução, um modelo gratuito, perfil curto e fictício. Não testado com PDF exportado do LinkedIn, nem com outros agentes. Os dois links de nome `*-prisma.html` das páginas de projeto continuam com nome de arquivo do exemplo.

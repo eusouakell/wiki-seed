@@ -139,7 +139,7 @@ Material de apoio: `PRINCIPLES.md` (regras editoriais e de harness), `templates/
 
 A wiki começa com exemplo e overview.  
 Depois da ingestão, `concepts/` tem páginas, `index.md` e `log.md` atualizados.  
-O site atual mostra o exemplo fictício do ensaio (Joana Teste), preenchido a partir da wiki.
+O site atual mostra o exemplo fictício do ensaio (Joana Teste), preenchido a partir da wiki. Para trocar esse conteúdo pelo seu, a partir do PDF do LinkedIn, siga `EXERCICIO-SITE.md`.
 
 Veja o mockup em `site/index.html`.
 

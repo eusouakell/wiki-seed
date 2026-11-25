@@ -149,4 +149,4 @@ O `ROADMAP.md` mostra os próximos passos. `CONTEXTO-PESSOAL-A-ENTERPRISE.md` ex
 
 ## Créditos
 
-Ideias adaptadas de outros kits abertos, com atribuição em [`CREDITOS.md`](CREDITOS.md).
+Wiki-seed é uma síntese autoral construída a partir de referências base: LLM Wiki, ideia apresentada por Andrej Karpathy, e o Open Knowledge Format (OKF). Também adapta ideias de outros kits abertos. Atribuições completas em [`CREDITOS.md`](CREDITOS.md).

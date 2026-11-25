@@ -60,11 +60,15 @@ Teste de `EXERCICIO-SITE.md` em clone isolado, com outra pessoa fictícia (Marin
 
 Conclusão: o resultado varia entre execuções com o modelo gratuito. Uma passada não garante site completo; use o relatório do agente e o checklist, e peça uma segunda passada ("preencha de novo os campos [FALTA] que a wiki cobre") quando sobrar `[FALTA]` com dado disponível.
 
-**Depois da execução 2**, a skill passou a trocar o retrato por `img/foto-pendente.svg` (neutro, novo arquivo) e a tratar logos sem fonte na wiki. Essa versão **não foi reexecutada**.
+**Segunda passada de revisão e nova execução (não concluídas):**
+- Revisão sobre o resultado da execução 2, com a skill já corrigida, em ~25 min: o agente leu wiki e HTML e não gravou nenhuma edição em `site/`. Interrompida.
+- Nova execução completa da operação site em clone do layout com redes e rodapé (commit 666eb2c): ~20 min sem gravar edição em `site/`. Interrompida.
+- Por isso as regras novas da skill (retrato trocado por `img/foto-pendente.svg`, redes sociais sem link inventado, rodapé, logos sem fonte) **não foram testadas**: são proposta. Os arquivos grandes de `site/` (a home tem cerca de 40 KB com SVG inline) parecem ser parte do problema com esse modelo, mas isso é hipótese, não medido.
+- O layout testado foi o anterior ao Sobre como âncora da home (854f24e e posteriores não foram testados).
 
 ## Limites do teste do exercício
 
 - Modelo gratuito não é igual a Claude ou Codex: a qualidade e o tempo variam
 - A cota gratuita não é publicada e a lista de modelos gratuitos muda. Não conte com isso como garantia
 - Rode uma vez antes do workshop e guarde a saída como plano B
-- Teste do exercício: um modelo, perfil curto e fictício, duas execuções do site. Não testado com PDF real exportado do LinkedIn nem com outros agentes
+- Teste do exercício: um modelo, perfil curto e fictício, duas execuções do site concluídas e duas tentativas de revisão interrompidas. Não testado com PDF real exportado do LinkedIn nem com outros agentes

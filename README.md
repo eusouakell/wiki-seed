@@ -135,6 +135,10 @@ A página `concepts/biblioteca-prisma/lab-lint.md` contém erros de propósito. 
 
 Material de apoio: `PRINCIPLES.md` (regras editoriais e de harness), `templates/` (modelos de página e guia do cabeçalho), `GLOSSARY.md` (glossário transversal; cada contexto tem seu `linguagem-ubiqua.md`) e `COMPARATIVO.md` (RAG tradicional vs LLM Wiki + OKF).
 
+## Guia em PDF
+
+Material de apoio do workshop: [LLM Wiki: do contexto ao portfólio](docs/LLM_Wiki_Kell_Bonassoli.pdf), com 22 páginas. Cobre o modelo mental de contexto, a anatomia da wiki, o passo a passo no GitHub e a evolução até o contexto corporativo. O guia explica; o repositório é o material de prática.
+
 ## Exemplo do resultado
 
 A wiki começa com exemplo e overview.  

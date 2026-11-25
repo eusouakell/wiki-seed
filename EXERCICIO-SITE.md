@@ -19,7 +19,7 @@ Antes: repositório criado a partir do template e um agente configurado (veja `o
 3. **Lacunas.** Peça: "Liste o que o site precisa (nome, cargo, apresentação, Sobre, projetos, contato) e a wiki ainda não tem." Responda o que quiser mostrar; o resto fica como lacuna.
 4. **Site.** Peça: "Siga o AGENTS.md. Execute a operação site." A skill cobre `index`, `sobre`, `projetos` e as páginas de projeto. Onde a wiki não tem o dado, o texto vira `[FALTA: campo]` (nunca fica o texto da Joana). O agente entrega um relatório com preenchidos, `[FALTA]`, removidos e imagens que sobraram.
 5. **Revisão.** Abra `site/index.html` e as outras páginas no navegador. Procure "Joana", empresas, depoimentos e e-mail do exemplo. Cada ocorrência visível deve estar trocada, removida ou marcada `[FALTA]`.
-6. **Complete.** Preencha os `[FALTA]` na wiki (ou diga ao agente) e rode a operação site de novo. Troque você mesma a foto e as imagens do exemplo (em `site/img/`): o agente não mexe em imagens.
+6. **Complete.** Preencha os `[FALTA]` na wiki (ou diga ao agente) e rode a operação site de novo. Se sobrar `[FALTA]` com dado que a wiki já tem, peça uma segunda passada: no teste, uma execução só nem sempre preenche tudo. O retrato do exemplo vira uma imagem neutra (`foto-pendente.svg`); coloque a sua foto em `site/img/` e ajuste o arquivo usado. Troque também as outras imagens do exemplo, o agente não mexe nelas.
 7. **Publicar é decisão sua.** Nada é publicado automaticamente. Contato e dados pessoais só entram se você pedir.
 
 ## Checklist

@@ -24,7 +24,8 @@ O site em `site/` vem com uma persona fictícia ("Joana"). Esta skill troca esse
    - **Não tem fato na wiki**: troque por `[FALTA: nome do campo]`. Nunca deixe o texto da Joana no lugar
    - **Bloco inteiro sem equivalente** (ex.: um depoimento, um projeto a mais): remova o bloco só se isso não quebrar a estrutura da página. Se quebrar, use `[FALTA: ...]`
 5. Páginas de projeto sem projeto correspondente na wiki: não apague o arquivo; marque o conteúdo com `[FALTA: ...]` e diga isso no relatório
-6. Imagens e links: a foto e as imagens do exemplo continuam nos arquivos (você não troca imagens). Liste no relatório quais imagens ainda são do exemplo e precisam ser trocadas pela pessoa. Itens de menu que apontam para uma seção removida devem ser listados no relatório
+6. Imagens: não apague nem troque arquivos de imagem. Exceção: o retrato do exemplo (`img/joana.jpg`) é de outra pessoa e não pode aparecer ao lado do nome novo. Em toda tag `<img>` que o usa, troque só `src` para `img/foto-pendente.svg` e o `alt` para `[FALTA: foto]`. Imagens de paisagem dos projetos podem ficar; o `alt` delas não pode nomear o projeto de exemplo. Liste no relatório as imagens que a pessoa precisa trocar. Logos de ferramentas do exemplo (Figma, Notion etc.) só ficam se a wiki citar a ferramenta; senão liste no relatório
+6b. Menu e links: item de menu ou link que aponta para uma seção ou página removida deve ser tirado do menu (só esse item; não mexa no resto do HTML) ou ficar como `[FALTA: ...]`. Liste no relatório
 7. Frases curtas de legenda ou slogan que não vêm da wiki contam como texto do exemplo: troque por fato da wiki ou `[FALTA]`
 8. Busque "Joana" e os nomes de empresas e pessoas do exemplo em `site/`. Nenhum pode sobrar no texto visível fora de um `[FALTA]`. Nomes de arquivo de imagem e de página (ex.: `joana.jpg`) podem ficar, mas liste no relatório
 9. Registre no log: `## [YYYY-MM-DD] site | atualizado a partir da wiki`

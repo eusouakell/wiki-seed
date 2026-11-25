@@ -65,28 +65,26 @@ COMPARATIVO.md
 site/
 ```
 
-| Caminho | Papel |
-| --- | --- |
-| `raw/` | fontes imutáveis (com exemplo para o exercício de ingestão) |
-| `concepts/index.md` | nível 0: catálogo global, lido primeiro |
-| `concepts/log.md` | histórico parseável |
-| `concepts/overview.md` | síntese de alto nível |
-| `concepts/biblioteca-prisma/` | contexto de exemplo (bounded context) |
-| `.../index.md` | nível 1: índice do contexto |
-| `.../linguagem-ubiqua.md` | termos que só valem ali |
-| `.../*.md` | páginas com frontmatter OKF |
-| `skills/ingest/` | raw → concepts |
-| `skills/query/` | responde a partir da wiki |
-| `skills/lint/` | verifica saúde e conformidade |
-| `skills/cleanup/` | consolida memória e limpa |
-| `skills/fechar-sessao/` | confere, guarda o que vale e registra |
-| `skills/site/` | preenche o site de exemplo a partir da wiki |
-| `templates/` | modelos de página e guia do cabeçalho (o `.okf/` das referências) |
-| `deterministic/` | limites e orçamentos |
-| `AGENTS.md` | schema do agente |
-| `onboarding.md` | apresentação + guia completo |
-| `COMPARATIVO.md` | RAG tradicional vs LLM Wiki + OKF |
-| `site/` | superfície de teste |
+- `raw/`: fontes imutáveis (com exemplo para o exercício de ingestão)
+- `concepts/index.md`: nível 0: catálogo global, lido primeiro
+- `concepts/log.md`: histórico parseável
+- `concepts/overview.md`: síntese de alto nível
+- `concepts/biblioteca-prisma/`: contexto de exemplo (bounded context)
+- `.../index.md`: nível 1: índice do contexto
+- `.../linguagem-ubiqua.md`: termos que só valem ali
+- `.../*.md`: páginas com frontmatter OKF
+- `skills/ingest/`: raw → concepts
+- `skills/query/`: responde a partir da wiki
+- `skills/lint/`: verifica saúde e conformidade
+- `skills/cleanup/`: consolida memória e limpa
+- `skills/fechar-sessao/`: confere, guarda o que vale e registra
+- `skills/site/`: preenche o site de exemplo a partir da wiki
+- `templates/`: modelos de página e guia do cabeçalho (o `.okf/` das referências)
+- `deterministic/`: limites e orçamentos
+- `AGENTS.md`: schema do agente
+- `onboarding.md`: apresentação + guia completo
+- `COMPARATIVO.md`: RAG tradicional vs LLM Wiki + OKF
+- `site/`: superfície de teste
 
 ## Atributos
 

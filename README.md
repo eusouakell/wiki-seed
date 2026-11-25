@@ -41,28 +41,29 @@ O harness já vem pronto.
 ## Estrutura
 
 ```
-raw/
-concepts/
-  index.md
-  log.md
-  overview.md
-  biblioteca-prisma/
-    index.md
-    linguagem-ubiqua.md
-    *.md
-skills/
-  ingest/
-  query/
-  lint/
-  cleanup/
-  fechar-sessao/
-  site/
-templates/
-deterministic/
-AGENTS.md
-onboarding.md
-COMPARATIVO.md
-site/
+📦 wiki-seed
+├── 📁 raw/
+├── 📁 concepts/
+│   ├── 📄 index.md
+│   ├── 📄 log.md
+│   ├── 📄 overview.md
+│   └── 📁 biblioteca-prisma/
+│       ├── 📄 index.md
+│       ├── 📄 linguagem-ubiqua.md
+│       └── 📄 *.md
+├── 📁 skills/
+│   ├── 📁 ingest/
+│   ├── 📁 query/
+│   ├── 📁 lint/
+│   ├── 📁 cleanup/
+│   ├── 📁 fechar-sessao/
+│   └── 📁 site/
+├── 📁 templates/
+├── 📁 deterministic/
+├── 📄 AGENTS.md
+├── 📄 onboarding.md
+├── 📄 COMPARATIVO.md
+└── 📁 site/
 ```
 
 - `raw/`: fontes imutáveis (com exemplo para o exercício de ingestão)

@@ -153,7 +153,7 @@ footer .w.ftop{display:flex;justify-content:space-between;align-items:flex-start
 .bx p{font-size:16px;color:var(--mut);line-height:1.5}
 .bx .lead{font-size:24px;line-height:1.3;color:var(--ink);font-weight:500;letter-spacing:-.035em}
 .bx .av{width:72px;height:72px;border-radius:16px;overflow:hidden}.bx .av img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
-.pls{display:flex;gap:8px;flex-wrap:wrap}.pls span,.pls a{height:40px;display:inline-flex;align-items:center;padding:0 14px;border-radius:999px;background:#fff;font-weight:500;font-size:16px}.pls span{gap:8px}.pls span svg{width:18px;height:18px;fill:#333}.pls em{font-style:normal;font-size:13px;color:var(--mut)}.bx.soc{min-height:0;margin-top:20px}
+
 .lst{display:grid;gap:8px}.lst span{display:flex;align-items:center;gap:10px;height:48px;padding:0 16px;border-radius:999px;background:#fff;font-weight:500;font-size:16px}.lst svg{width:20px;height:20px;flex:none}
 .tl{display:flex;gap:10px}.tl svg{width:26px;height:26px;fill:#333}.tl span{width:60px;height:60px;border-radius:14px;background:#fff;display:grid;place-items:center;font-weight:600;font-size:15px;color:#333;flex:none;box-shadow:0 1px 0 #eee}
 .bx.img{padding:0;min-height:0}.bx.img img{width:100%;height:100%;object-fit:cover}
@@ -233,3 +233,29 @@ footer{margin-top:96px;padding:56px 0}
 footer .w.ftop{flex-direction:column;gap:40px}
 }
 
+
+/* sobre: polaroid hero */
+.ahero{display:grid;grid-template-columns:minmax(280px,380px) 1fr;gap:72px;align-items:center}
+.ahero h1{font-size:60px;margin:20px 0;max-width:none;line-height:1.05;letter-spacing:-.035em}
+.ahero p.sub{margin:0;max-width:460px}
+.polaroid{background:#fff;padding:14px 14px 22px;border-radius:20px;box-shadow:0 1px 2px rgba(0,0,0,.06),0 24px 48px -16px rgba(0,0,0,.22);transform:rotate(-3deg);transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+.polaroid:hover{transform:rotate(-1deg)}
+.js .polaroid.rv.in{transform:rotate(-3deg)}.js .polaroid.rv.in:hover{transform:rotate(-1deg)}
+.polaroid img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:50% 20%;border-radius:12px;background:#ddd}
+.pcap{padding:18px 6px 0}
+.pcap b{font-size:24px;font-weight:500;letter-spacing:-.03em;display:block}
+.pcap>small{display:block;color:var(--mut);font-size:15px;margin-top:4px}
+.psoc{display:flex;gap:10px;margin-top:16px}
+.psoc span{width:36px;height:36px;border:1px dashed #d8d8d8;border-radius:10px;display:grid;place-items:center}
+.psoc svg{width:16px;height:16px;fill:#333}
+.pnote{display:block;font-size:13px;color:var(--mut);margin-top:10px;line-height:1.4}
+.toolsline{margin-top:44px}
+.tlabel{display:block;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin-bottom:14px}
+.toolsline .tl span{background:var(--soft);box-shadow:none}
+.bento3.two{grid-template-columns:1.6fr 1fr}
+@media (max-width:860px){
+.ahero{grid-template-columns:1fr;gap:48px}
+.polaroid{max-width:320px;margin:0 auto}
+.ahero h1{font-size:42px}
+.bento3.two{grid-template-columns:1fr}
+}

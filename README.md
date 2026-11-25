@@ -44,13 +44,13 @@ O harness já vem pronto.
 📦 wiki-seed
 ├── 📁 raw/
 ├── 📁 concepts/
-│   ├── 📄 index.md
-│   ├── 📄 log.md
-│   ├── 📄 overview.md
+│   ├── index.md
+│   ├── log.md
+│   ├── overview.md
 │   └── 📁 biblioteca-prisma/
-│       ├── 📄 index.md
-│       ├── 📄 linguagem-ubiqua.md
-│       └── 📄 *.md
+│       ├── index.md
+│       ├── linguagem-ubiqua.md
+│       └── *.md
 ├── 📁 skills/
 │   ├── 📁 ingest/
 │   ├── 📁 query/
@@ -60,9 +60,9 @@ O harness já vem pronto.
 │   └── 📁 site/
 ├── 📁 templates/
 ├── 📁 deterministic/
-├── 📄 AGENTS.md
-├── 📄 onboarding.md
-├── 📄 COMPARATIVO.md
+├── AGENTS.md
+├── onboarding.md
+├── COMPARATIVO.md
 └── 📁 site/
 ```
 

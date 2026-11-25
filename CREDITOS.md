@@ -32,5 +32,6 @@ Site de exemplo (`site/index.html`):
   - p4.jpg: Wilfredor, CC0, https://commons.wikimedia.org/wiki/File:San_Juan_Valley.jpg
   - p5.jpg: David Marcu davidmarcu, CC0, https://commons.wikimedia.org/wiki/File:Alone_in_the_unspoilt_wilderness_(Unsplash).jpg
 - Retrato de Joana Teste (`site/img/joana.jpg`): imagem sintética de personagem fictícia. Não é foto de pessoa real.
+- Ícones de marcas (Figma, Miro, Maze, Notion, Linear, Jira, GitHub, React, Vercel, TypeScript, Storybook): pacote Simple Icons, CC0, https://simpleicons.org. As marcas pertencem aos respectivos donos e aparecem só para ilustrar as ferramentas da persona.
 - Fonte Inter (SIL Open Font License), carregada do Google Fonts.
 - Perfil, projetos e depoimentos do site de exemplo são fictícios (persona Joana Teste), escritos só para a amostra.
